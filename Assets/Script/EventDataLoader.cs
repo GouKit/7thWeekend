@@ -9,13 +9,12 @@ using LitJson;
 public class GameData
 {
 	public static List<string> playerData = new List<string>();
+    public static List<string> userData = new List<string>();
 }
 
 public class EventDataLoader : MonoBehaviour
 {
-    // 큰스테이지, 세부스테이지
-	private int gamestagenum = 4, ingameStagenum = 3;
-
+    
 	void Start()
 	{
 		// data not null
@@ -26,7 +25,6 @@ public class EventDataLoader : MonoBehaviour
 		// data null
 		else
 		{
-			
 			SaveData();
 		}
 	}
