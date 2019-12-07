@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-
-
-    private int maxQuest = 4;
     public List<GameObject> MonsterList = new List<GameObject>();
     public Transform questList;
     public GameObject quest;
+
+    private int maxQuest = 4;
+    float time = 300, currentTime = 0; 
 
     private void Start()
     {
@@ -21,8 +21,17 @@ public class EventManager : MonoBehaviour
         //퀘스트 생성 ui 발생
         GameObject em = Instantiate(quest, Vector3.zero, Quaternion.identity);
         em.transform.SetParent(questList);
-        Debug.Log("asddsafasdfasfd");
     }
     
-    
+    private void Update()
+    {
+        currentTime += Time.deltaTime;
+        if(currentTime >= time)
+        {
+            CreateQuest();
+            currentTime = 0;
+        }
+    }
+
+
 }

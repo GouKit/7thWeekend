@@ -40,13 +40,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8954762802735143264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71a5e28112533e5439ce80e777aa4124, type: 3}
+  m_Script: {fileID: 11500000, guid: 9aa48a5ea209c834ca51f0cf4809ecd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   monster: {fileID: 11400000, guid: de4b8be19336556458ccd8d789895e0a, type: 2}
-  name: 
-  power: 0
-  exp: 0
-  gold: 0
-  possibility: 0
-  time: 0

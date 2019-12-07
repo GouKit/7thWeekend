@@ -2,24 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Monster Templete", menuName = "Monsters")]
-public class Monster : ScriptableObject
+public class MonsterBase : MonoBehaviour
 {
-    [SerializeField]
-    private Sprite image; //몬스터 이미지
-    public Sprite Image => image;
-
-    [SerializeField]
-    private new string name; //몬스터 이름 
-    public string Name => name;
-
-    [SerializeField]
-    public int hp; //몬스터 체력
-    public int Hp => Hp;
+    public Monster monster;
 
     [SerializeField]
     public int power; //몬스터 전투력
-    public int Power => power;
+
+    [SerializeField]
+    public int hp; //몬스터 체력
 
     [SerializeField]
     private int exp; //몬스터 경험치
@@ -40,4 +31,15 @@ public class Monster : ScriptableObject
     [SerializeField]
     private float exitTime; // 몬스터 소멸 시간
     public float ExitTIme => exitTime;
+
+    private void Start()
+    {
+        hp = monster.Hp;
+        power = monster.Power;
+        exp = monster.Exp;
+        gold = monster.Gold;
+        possibility = monster.Possibility;
+        time = monster.Time;
+        exitTime = monster.ExitTIme;
+    }
 }
