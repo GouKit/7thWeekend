@@ -720,7 +720,8 @@ GameObject:
   - component: {fileID: 7375228554117047890}
   - component: {fileID: 7375228554117047894}
   - component: {fileID: 7375228554117047889}
-  - component: {fileID: 7375228554321845935}
+  - component: {fileID: 5803459851351706587}
+  - component: {fileID: 1041737524490102083}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Player
@@ -818,7 +819,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.0043561, y: 0}
+  m_Offset: {x: 0.2601012, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -829,7 +830,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9912877, y: 1}
+  m_Size: {x: 2.9892342, y: 1}
   m_EdgeRadius: 0
 --- !u!50 &7375228554117047894
 Rigidbody2D:
@@ -839,7 +840,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7375228554117047895}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -851,7 +852,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!114 &7375228554117047889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -868,7 +869,7 @@ MonoBehaviour:
   power: 12
   isEmployment: 0
   isCancel: 0
---- !u!114 &7375228554321845935
+--- !u!114 &5803459851351706587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -877,9 +878,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 7375228554117047895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: babebc2fd51ed3c4ca7add3bb585d9de, type: 3}
+  m_Script: {fileID: 11500000, guid: c7ad22d071a97554da71fc81ed22f26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isMove: 1
+--- !u!114 &1041737524490102083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375228554117047895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2d71951b3cac84dad64c1f87815e90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  type: 2
+  name: 
+  rank: 
+  hp: 0
+  power: 0
+  needExp: 0
+  employ: 0
+  rewardDown: 0
+  deadPenalty: 0
 --- !u!1 &7375228554514087613
 GameObject:
   m_ObjectHideFlags: 0
