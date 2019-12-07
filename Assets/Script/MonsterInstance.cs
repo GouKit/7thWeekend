@@ -43,7 +43,8 @@ public class MonsterInstance
             int playerSafe = 100 - (100 + monster.Power - pb.hp);
             if(Random.Range(0,100) > playerSafe)
             {
-                //플레이어 사망
+                //사망
+                GameManager.instance.crystal -= pb.deadPenalty;
             }
         }
 
@@ -51,11 +52,11 @@ public class MonsterInstance
         int possible = monster.Possibility * (100 + allPower - monster.Power);
         if(Random.Range(0,100) > possible)
         {
-            //실패
+            //실패UI 띄우기
         }
         else
         {
-            //성공
+            //성공(무기획득 확률)
         }
     }
 

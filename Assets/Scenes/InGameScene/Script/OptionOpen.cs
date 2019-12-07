@@ -16,6 +16,10 @@ public class OptionOpen : MonoBehaviour
         Time.timeScale = 0f;
     }
 
-    
-   
+    private void OnDisable()
+    {
+        gameObject.SetActive(true);
+    }
+
+
 }

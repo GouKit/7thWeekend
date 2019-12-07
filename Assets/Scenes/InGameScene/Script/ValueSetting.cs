@@ -9,17 +9,11 @@ public class ValueSetting : MonoBehaviour
     public Text Crystal;
     public Text Population;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-    
-    }
-
     // Update is called once per frame
     void Update()
     {
-        Gold.text = "";
-        Crystal.text = "";
-        Population.text = "/";
+        Gold.text = "" + GameManager.instance.gold;
+        Crystal.text = "" + GameManager.instance.crystal;
+        Population.text = GameManager.instance.maxPeople+"/"+ GameManager.instance.maxPeople;
     }
 }
