@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Upgrade : MonoBehaviour
 {
+
     public void OnClick()
     {
-        //player.level++;
-        
+        for (int i = 0; i < SoldierMgr.instance.Soldier.Count; i++) 
+        {
+            PlayerBase pb = SoldierMgr.instance.Soldier[i].GetComponent<PlayerBase>();
+            pb.LevelUp();
+        }
     }
 }

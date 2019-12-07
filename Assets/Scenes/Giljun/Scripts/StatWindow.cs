@@ -14,19 +14,25 @@ public class StatWindow : MonoBehaviour
     public GameObject acceptBtn;
     public GameObject cancelBtn;
     public GameObject soldier;
+    PlayerBase pb;
 
     // Start is called before the first frame update
     void Start()
     {
+        pb = transform.root.gameObject.GetComponent<PlayerBase>();
         soldier = transform.root.gameObject;
         soldierStat = transform.root.gameObject.GetComponent<SoldierStat>();
         soldierNumber =FindObjectOfType<SoldierNumber>();
         soldierFactory = FindObjectOfType<SoldierFactory>();
-        soldierHealth.text = soldierStat.health + "/" + soldierStat.health;
-        soldierPower.text = soldierStat.power + "/" + soldierStat.power;
+        soldierHealth.text = pb.hp + "/" + pb.hp;
+        soldierPower.text = pb.power + "/" + pb.power;
     }
 
-    
+    private void Update()
+    {
+        soldierHealth.text = pb.hp + "/" + pb.hp;
+        soldierPower.text = pb.power + "/" + pb.power;
+    }
 
     public void OnClick(string type)
     {
@@ -38,7 +44,8 @@ public class StatWindow : MonoBehaviour
                     soldierNumber.curPeopleNum++;
                     soldierFactory.curNum--;
                     soldierStat.isEmployment = true;
-                    panel.SetActive(false);
+                    SoldierMgr.instance.AddSoldier(soldier);
+                    //panel.SetActive(false);
                     Destroy(acceptBtn);
                     Destroy(cancelBtn);
                 }
