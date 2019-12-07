@@ -13,4 +13,14 @@ public class WinPopup : MonoBehaviour
 		image.color = dead ? new Color(0, 0, 0, 0.5f) : Color.white;
 
 	}
+
+	public void _Confirm()
+	{
+		
+	}
+
+	public void _Reborn()
+	{
+		
+	}
 }
