@@ -26,7 +26,6 @@ public class PlayerBase : MonoBehaviour
     public int employ; //고용 비용
     public int rewardDown; //보상 감소율
     public int deadPenalty; //사망 비용
-    public int nowExp;
 
     void Start()
     {
@@ -41,7 +40,6 @@ public class PlayerBase : MonoBehaviour
         employ = player.employ;
         rewardDown = player.rewardDown;
         deadPenalty = player.deadPenalty;
-        nowExp = player.nowExp;
     }
 
     void Upgrade(int level)
@@ -68,4 +66,11 @@ public class PlayerBase : MonoBehaviour
         Level++;
         Upgrade(Level);
     }
+
+    void OnMouseDown()
+    {
+        if(Level < 30)
+            LevelUp();
+    }
+
 }
