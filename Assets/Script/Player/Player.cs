@@ -29,5 +29,4 @@ public class Player : ScriptableObject
     public int employ; //고용 비용
     public int rewardDown; //보상 감소율
     public int deadPenalty; //사망 비용
-    public int nowExp; //보유 경험치
 }

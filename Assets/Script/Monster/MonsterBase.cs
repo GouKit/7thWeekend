@@ -7,10 +7,8 @@ public class MonsterBase : MonoBehaviour
     public Monster monster;
 
     [SerializeField]
-    public int power; //몬스터 전투력
-
-    [SerializeField]
-    public int hp; //몬스터 체력
+    private int power; //몬스터 전투력
+    public int Power => power;
 
     [SerializeField]
     private int exp; //몬스터 경험치
@@ -34,7 +32,6 @@ public class MonsterBase : MonoBehaviour
 
     private void Start()
     {
-        hp = monster.Hp;
         power = monster.Power;
         exp = monster.Exp;
         gold = monster.Gold;
