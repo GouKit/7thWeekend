@@ -7,11 +7,20 @@ using UnityEngine.UI;
 public class WinPopup : MonoBehaviour
 {
 	public List<Image> unit_imgs;
+	public List<GameObject> letters;
 	private int index;
 	private Action answerNo;
 	private Action answerYes;
 
-	public WinPopup AddPlayerState(PlayerLLL[] player)
+	private void Awake()
+	{
+		foreach (var item in letters)
+		{
+			item.SetActive(false);
+		}
+	}
+
+	public WinPopup SetResult(PlayerLLL[] player)
 	{
 		for (int i = 0; i < unit_imgs.Count; i++)
 		{
@@ -20,6 +29,7 @@ public class WinPopup : MonoBehaviour
 			{
 				unit_imgs[i].sprite = player[i].player.player.image;
 				unit_imgs[i].color = player[i].dead ? new Color(0, 0, 0, 0.5f) : Color.white;
+				letters[i].SetActive(player[i].levelup);
 			}
 		}
 		return this;
