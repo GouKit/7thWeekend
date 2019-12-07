@@ -45,7 +45,8 @@ public class EventLoader : MonoBehaviour
             int playerSafe = 100 - (100 + mb.power - pb.hp);
             if(Random.Range(0,100) > playerSafe)
             {
-                //플레이어 사망
+                //사망
+                GameManager.instance.crystal -= pb.deadPenalty;
             }
         }
 
@@ -53,11 +54,11 @@ public class EventLoader : MonoBehaviour
         int possible = mb.possibility * (100 + allPower - mb.power);
         if(Random.Range(0,100) > possible)
         {
-            //실패
+            //실패UI 띄우기
         }
         else
         {
-            //성공
+            //성공(무기획득 확률)
         }
     }
 

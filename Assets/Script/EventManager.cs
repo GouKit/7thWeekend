@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    private int maxQuest = 5;
+    private int maxQuest = 4;
     public List<GameObject> MonsterList = new List<GameObject>();
     
     public void CreateQuest()
