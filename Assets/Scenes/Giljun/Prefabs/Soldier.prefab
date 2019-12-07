@@ -722,6 +722,7 @@ GameObject:
   - component: {fileID: 7375228554117047889}
   - component: {fileID: 5803459851351706587}
   - component: {fileID: 1041737524490102083}
+  - component: {fileID: -9110887756644586746}
   m_Layer: 0
   m_Name: Soldier
   m_TagString: Player
@@ -903,6 +904,21 @@ MonoBehaviour:
   employ: 0
   rewardDown: 0
   deadPenalty: 0
+--- !u!114 &-9110887756644586746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375228554117047895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.992281, g: 1, b: 0.5235849, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &7375228554514087613
 GameObject:
   m_ObjectHideFlags: 0
