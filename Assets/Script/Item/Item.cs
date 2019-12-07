@@ -12,7 +12,7 @@ public class ItemType
 }
 
 [CreateAssetMenu(fileName = "Item Templete", menuName = "Items")] 
-public class Item : MonoBehaviour
+public class Item : ScriptableObject
 {
     public Sprite image; //무기 이미지
     public ItemType.Item_Type type; //무기 타입
