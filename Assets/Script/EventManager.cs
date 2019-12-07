@@ -9,6 +9,8 @@ public class EventManager : MonoBehaviour
     public Transform questList;
     public GameObject quest;
 
+    float time = 300, currentTime = 0; 
+
     private void Start()
     {
         CreateQuest();
@@ -19,7 +21,16 @@ public class EventManager : MonoBehaviour
         //퀘스트 생성 ui 발생
         GameObject em = Instantiate(quest, Vector3.zero, Quaternion.identity);
         em.transform.SetParent(questList);
-        Debug.Log("asddsafasdfasfd");
     }
-       
+
+    private void Update()
+    {
+        currentTime += Time.deltaTime;
+        if(currentTime >= time)
+        {
+            CreateQuest();
+            currentTime = 0;
+        }
+    }
+
 }
