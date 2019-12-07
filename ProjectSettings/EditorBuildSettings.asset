@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/03_Ect/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Giljun/Scenes/EmploymentSystem.unity
+    guid: ec66e0158639ad34db8c441a7581767f
+  - enabled: 1
+    path: Assets/Scenes/Giljun/Scenes/New Scene.unity
+    guid: eabf9d00136448545b075cc377e775da
   m_configObjects: {}
