@@ -8,11 +8,11 @@ using LitJson;
 [SerializeField]
 public class GameData
 {
-	public static List<string> playerData = new List<string>();
-    public static List<string> userData = new List<string>();
+	public static LinkedList<PlayerBase> playerData = new LinkedList<PlayerBase>();
+    public static int userLevel = 1;
 }
 
-public class EventDataLoader : MonoBehaviour
+public class DataLoader : MonoBehaviour
 {
     
 	void Start()
@@ -21,11 +21,13 @@ public class EventDataLoader : MonoBehaviour
 		if (File.Exists(Application.persistentDataPath + "/GameData.json"))
 		{
 			LoadData();
+			GameData.userLevel = PlayerPrefs.GetInt("UserLevel");
 		}
 		// data null
 		else
 		{
 			SaveData();
+			PlayerPrefs.SetInt("UserLevel", GameData.userLevel);
 		}
 	}
 

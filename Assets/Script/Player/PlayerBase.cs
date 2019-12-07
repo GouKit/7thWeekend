@@ -17,8 +17,8 @@ public class PlayerBase : MonoBehaviour
         set 
         { 
             level = value;
-            if(level >= 10)
-                level = 10; 
+            if(level >= 30)
+                level = 30; 
         } 
     }
     public int needExp; //필요 경험치
@@ -44,16 +44,13 @@ public class PlayerBase : MonoBehaviour
 
     void Upgrade(int level)
     {
-        hp = player.hp;
-        power = player.power;
-
         if(type == PlayerType.Player_Type.MAGICIAN)
             power += (level - 1)*reinforce;
         
         if(level < 10)
-            hp += (level - 1)*reinforce;
+            hp += reinforce;
         else
-            hp += (level - 1)*2*reinforce;
+            hp += 2 * reinforce;
 
         if(level < 6)
             needExp = (level + 1) * 50;
@@ -68,6 +65,12 @@ public class PlayerBase : MonoBehaviour
     {
         Level++;
         Upgrade(Level);
+    }
+
+    void OnMouseDown()
+    {
+        if(Level < 30)
+            LevelUp();
     }
 
 }
