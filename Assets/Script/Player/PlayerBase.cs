@@ -68,11 +68,4 @@ public class PlayerBase : MonoBehaviour
         Level++;
         Upgrade(Level);
     }
-
-    void OnMouseDown()
-    {
-        if(Level < 30)
-            LevelUp();
-    }
-
 }

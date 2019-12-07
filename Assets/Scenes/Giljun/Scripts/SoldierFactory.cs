@@ -8,24 +8,17 @@ public class SoldierFactory : MonoBehaviour
     public int curNum;
     public GameObject soldier;
     public Player[] type;
-    // Start is called before the first frame update
+
     private void Start()
     {
-
+        maxNum = GameManager.instance.maxPeople;
         StartCoroutine(MakeSoldier());
-        
-    }
-
-    private void Update()
-    {
-        
     }
 
     IEnumerator MakeSoldier()
     {
         while (true)
         {
-
             if (curNum < maxNum)
             {
                 int random = Random.Range(0, type.Length);
@@ -36,7 +29,7 @@ public class SoldierFactory : MonoBehaviour
                 hello.transform.position = transform.position;
                 curNum++;
             }
-             yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(3f);
         }
     }
 }
