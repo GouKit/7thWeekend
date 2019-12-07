@@ -1318,24 +1318,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d434dc7e4c6e4f04d82602a64a5ba99c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxNum: 3
+  maxNum: 0
   curNum: 0
-  soldier: {fileID: 7375228554117047895, guid: 14844d2d04370444fa39763bf2990f81, type: 3}
-  type:
-  - {fileID: 11400000, guid: d1c171e308f9f28478427e2c26c9ed44, type: 2}
-  - {fileID: 11400000, guid: 9d659a2d6508eca43b9768df49052041, type: 2}
-  - {fileID: 11400000, guid: 701afd798927df940b6f0e0047c039ed, type: 2}
-  - {fileID: 11400000, guid: b6915a32db1f20944bb266b8cfa17bc9, type: 2}
-  - {fileID: 11400000, guid: 847853a9a4e0ba14484fbe858f304e08, type: 2}
-  - {fileID: 11400000, guid: 7504beea7036bc746a8109e6ce1ed36a, type: 2}
-  - {fileID: 11400000, guid: e424e337901404b4188a322f050b7a30, type: 2}
-  - {fileID: 11400000, guid: 321e873ac00c4484893b09c96d4b5d62, type: 2}
-  - {fileID: 11400000, guid: fabd6ff3a11f9d24bbeb84a5246e00fe, type: 2}
-  - {fileID: 11400000, guid: f007eb970605594479131e479cd25794, type: 2}
-  - {fileID: 11400000, guid: 861b912d35dc908469195a79f3029140, type: 2}
-  - {fileID: 11400000, guid: 87c43348b25d99541a05ec3c31f38465, type: 2}
-  - {fileID: 11400000, guid: 24a10ebf1b8612543955ef11db03a224, type: 2}
-  - {fileID: 11400000, guid: 67c8381636a966e4ab74d93ef93f8d61, type: 2}
+  soldier: {fileID: 0}
+  type: []
 --- !u!4 &646511837
 Transform:
   m_ObjectHideFlags: 0
@@ -2587,14 +2573,14 @@ MonoBehaviour:
   MonsterList:
   - {fileID: 1763645475018714060, guid: 96ffcdb84a205d24aa7275295081ddd6, type: 3}
   - {fileID: 4779871461230572206, guid: e5cdefdbb0eb9624abb1f6e0fbff6b26, type: 3}
-  - {fileID: 8241723549162635988, guid: 62ef3f430472da34a85e33802c054c9a, type: 3}
-  - {fileID: 8954762802735143264, guid: 74f5c1a6fa4455d4587cdb24c5f463cc, type: 3}
   - {fileID: 3150929359406117895, guid: b8fcd874bfaa56c4688668153ce0a988, type: 3}
   - {fileID: 4477476215790890107, guid: 2eefa8b21f5be8f4791182f97f311104, type: 3}
-  - {fileID: 1047364907100843760, guid: a3e1c2cd5b4b86e49970b937d66158f8, type: 3}
-  - {fileID: 5889337970783976725, guid: c3d890d55d3c4e94cab556fa93c3538a, type: 3}
   - {fileID: 8976079669712673229, guid: 783367fe61c593c4082fe7ae78fa556d, type: 3}
   - {fileID: 1580675396496095353, guid: de5c35233371c6a4087de2f201f3ecf3, type: 3}
+  - {fileID: 8241723549162635988, guid: 62ef3f430472da34a85e33802c054c9a, type: 3}
+  - {fileID: 8954762802735143264, guid: 74f5c1a6fa4455d4587cdb24c5f463cc, type: 3}
+  - {fileID: 1047364907100843760, guid: a3e1c2cd5b4b86e49970b937d66158f8, type: 3}
+  - {fileID: 5889337970783976725, guid: c3d890d55d3c4e94cab556fa93c3538a, type: 3}
   questList: {fileID: 1873300962}
   quest: {fileID: 1783239658582267266, guid: bf794924a2e38a54ca65de52918be090, type: 3}
 --- !u!114 &1407960009
@@ -2609,7 +2595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cf588c47943de54a92422c968b45da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EM: {fileID: 1407960008}
+  EM: {fileID: 0}
+  inventory: {fileID: 0}
   crystal: 1000
   gold: 1000
   maxPeople: 10
@@ -3035,7 +3022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 7
+  outlineSize: 1
 --- !u!1 &1645713260
 GameObject:
   m_ObjectHideFlags: 0

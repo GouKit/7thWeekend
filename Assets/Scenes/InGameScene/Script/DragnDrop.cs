@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DragnDrop : MonoBehaviour
 {
-    EventLoader papi;
     public List<Transform> slot = new List<Transform>();
 
     private Vector3 propose;//기존위치
@@ -16,12 +15,8 @@ public class DragnDrop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         gameObject.GetComponent<SpriteOutline>().enabled = false;
-       // papi = player.GetComponent<EventLoader>();
-
-
-}
+    }
 
 private void OnMouseDown()
     {
@@ -32,7 +27,6 @@ private void OnMouseDown()
     private void OnMouseUp()
     {
         gameObject.GetComponent<SpriteOutline>().enabled = false;
-        //transform.position = propose;
     }
 
     private void OnMouseDrag()
@@ -45,7 +39,6 @@ private void OnMouseDown()
     public void mando()
     {
         Debug.Log("asdf");
-        //papi.players.Add(gameObject);
         gameObject.SetActive(false);
     }
 

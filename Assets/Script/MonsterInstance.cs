@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterInstance
+public class MonsterInstance : MonoBehaviour
 {
-    private Monster monster;
+    private MonsterBase monster;
     public List<GameObject> players = new List<GameObject>();
     public int allPower;
     public bool SpendMoney = false;
@@ -12,7 +12,7 @@ public class MonsterInstance
 
     void Start()
     {
-        monster = GameManager.instance.EM.MonsterList.GetRandomElement();
+        monster = GameManager.instance.EM.MonsterList.GetRandomElement().GetComponent<MonsterBase>();
     }
 
     public void Go()
