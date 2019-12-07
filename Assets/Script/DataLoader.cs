@@ -14,7 +14,6 @@ public class GameData
 
 public class DataLoader : MonoBehaviour
 {
-    
 	void Start()
 	{
 		// data not null
