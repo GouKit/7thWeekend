@@ -11,7 +11,7 @@ public class DragPopup : MonoBehaviour
 	private bool negative;
 	public float speed = 1;
 	private RectTransform rect;
-	private ReactiveProperty<float> now = new ReactiveProperty<float>();
+	public ReactiveProperty<float> now = new ReactiveProperty<float>();
 
 	protected void Awake()
 	{

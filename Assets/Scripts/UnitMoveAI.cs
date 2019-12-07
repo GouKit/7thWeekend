@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitBehaviour : MonoBehaviour
+public class UnitMoveAI : MonoBehaviour
 {
 	public Animator animator;
 	public float speed = 1;
 
-	public Vector2 autoPilotLeftPivot;
-	public Vector2 autoPilotRightPivot;
+	public Vector2 autoPilotLeftPivot = Vector2.left;
+	public Vector2 autoPilotRightPivot = Vector2.right;
 	public Vector2 moveTest;
+	public List<RuntimeAnimatorController> fastAnimator;
 	public bool AutoPilot { get => autoPilot; set => autoPilot = value; }
 	private bool autoPilot;
 
@@ -30,6 +31,7 @@ public class UnitBehaviour : MonoBehaviour
 
 	private void Awake()
 	{
+		animator.runtimeAnimatorController = fastAnimator.GetRandomElement();
 		AutoPilot = true;
 		StartCoroutine(AutoPilotCor());
 	}
@@ -92,10 +94,5 @@ public class UnitBehaviour : MonoBehaviour
 			Random.Range(start.x, end.x),
 			Random.Range(start.y, end.y),
 			Random.Range(start.z, end.z));
-	}
-
-	public void OnValidate()
-	{
-		MoveTo(moveTest);
 	}
 }
