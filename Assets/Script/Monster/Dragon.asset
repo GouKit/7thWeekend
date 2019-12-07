@@ -14,8 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 0}
   name: "\uB4DC\uB798\uACE4"
+  hp: 100
   power: 50
   exp: 100
   gold: 1000
   possibility: 25
   time: 10800
+  exitTime: 0

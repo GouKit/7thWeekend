@@ -19,8 +19,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
 --- !u!4 &6071994927374528918
 Transform:
   m_ObjectHideFlags: 0
@@ -96,11 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266b8189df308044285c412eb749914b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!95 &6071994927374528916
 Animator:
   serializedVersion: 3
@@ -129,13 +124,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6071994927374528923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6549bd2a009d634982997dbfdb924c1, type: 3}
+  m_Script: {fileID: 11500000, guid: f3868d61f0c35d6419aa7c6851e9d6b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6071994927374528916}
   speed: 1
-  autoPilotLeftPivot: {x: -1, y: 0}
-  autoPilotRightPivot: {x: 1, y: 0}
+  autoPilotLeftPivot: {x: -5, y: -5}
+  autoPilotRightPivot: {x: 5, y: 2}
   moveTest: {x: 0, y: 0}
   fastAnimator:
   - {fileID: 9100000, guid: 66008b8fb454f5a4d9ad23dc49a45c8b, type: 2}
