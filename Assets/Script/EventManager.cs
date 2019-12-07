@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
+
+
     private int maxQuest = 4;
     public List<GameObject> MonsterList = new List<GameObject>();
     public Transform questList;
@@ -22,7 +24,7 @@ public class EventManager : MonoBehaviour
         GameObject em = Instantiate(quest, Vector3.zero, Quaternion.identity);
         em.transform.SetParent(questList);
     }
-
+    
     private void Update()
     {
         currentTime += Time.deltaTime;
@@ -32,5 +34,6 @@ public class EventManager : MonoBehaviour
             currentTime = 0;
         }
     }
+
 
 }

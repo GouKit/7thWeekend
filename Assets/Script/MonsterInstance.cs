@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EventLoader : MonoBehaviour
+public class MonsterInstance
 {
-    private GameObject monster;
-    private MonsterBase mb;
+    private Monster monster;
     public List<GameObject> players = new List<GameObject>();
     public int allPower;
     public bool SpendMoney = false;
@@ -13,8 +12,7 @@ public class EventLoader : MonoBehaviour
 
     void Start()
     {
-        monster = GameManager.instance.EM.MonsterList[Random.Range(0, GameManager.instance.EM.MonsterList.Count)];
-        mb = monster.GetComponent<MonsterBase>();
+        monster = GameManager.instance.EM.MonsterList.GetRandomElement();
     }
 
     public void Go()
@@ -30,7 +28,7 @@ public class EventLoader : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(mb.time < time || SpendMoney)
+        if(monster.Time < time || SpendMoney)
         {
             Result();
         }
@@ -42,7 +40,7 @@ public class EventLoader : MonoBehaviour
         for(int i = 0; i < players.Count; i++)
         {
             PlayerBase pb = players[i].GetComponent<PlayerBase>();
-            int playerSafe = 100 - (100 + mb.power - pb.hp);
+            int playerSafe = 100 - (100 + monster.Power - pb.hp);
             if(Random.Range(0,100) > playerSafe)
             {
                 //사망
@@ -51,7 +49,7 @@ public class EventLoader : MonoBehaviour
         }
 
         //공략 가능성 * (100+파티 전투력- 몬스터 전투력)
-        int possible = mb.possibility * (100 + allPower - mb.power);
+        int possible = monster.Possibility * (100 + allPower - monster.Power);
         if(Random.Range(0,100) > possible)
         {
             //실패UI 띄우기

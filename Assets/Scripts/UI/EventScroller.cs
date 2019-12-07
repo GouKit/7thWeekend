@@ -5,18 +5,22 @@ using EnhancedUI.EnhancedScroller;
 
 public class EventScroller : MonoBehaviour, IEnhancedScrollerDelegate
 {
+    public EnhancedScroller scroller;
+    public EventCellView prefab;
+
     public EnhancedScrollerCellView GetCellView(EnhancedScroller scroller, int dataIndex, int cellIndex)
     {
-        throw new System.NotImplementedException();
+        var cellView = scroller.GetCellView(prefab) as EventCellView;
+        return cellView;
     }
 
     public float GetCellViewSize(EnhancedScroller scroller, int dataIndex)
     {
-        throw new System.NotImplementedException();
+        return 200f;
     }
 
     public int GetNumberOfCells(EnhancedScroller scroller)
     {
-        throw new System.NotImplementedException();
+        return 0;
     }
 }
