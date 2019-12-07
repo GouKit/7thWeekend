@@ -72,17 +72,5 @@ public class LineUp : MonoBehaviour
                 flip = true;
             }
         }
-        //if (collision.gameObject.CompareTag("Right"))
-        //{
-        //    Debug.Log(collision.gameObject.name);
-        //    if (flip)
-        //    {
-        //        flip = true;
-        //    }
-        //    else
-        //    {
-        //        flip = false;
-        //    }
-        //}
     }
 }
