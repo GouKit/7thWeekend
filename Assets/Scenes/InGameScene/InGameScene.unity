@@ -1320,8 +1320,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxNum: 0
   curNum: 0
-  soldier: {fileID: 0}
-  type: []
+  soldier: {fileID: 7375228554117047895, guid: 14844d2d04370444fa39763bf2990f81, type: 3}
+  type:
+  - {fileID: 11400000, guid: d1c171e308f9f28478427e2c26c9ed44, type: 2}
+  - {fileID: 11400000, guid: fabd6ff3a11f9d24bbeb84a5246e00fe, type: 2}
+  - {fileID: 11400000, guid: 9d659a2d6508eca43b9768df49052041, type: 2}
+  - {fileID: 11400000, guid: 701afd798927df940b6f0e0047c039ed, type: 2}
+  - {fileID: 11400000, guid: e424e337901404b4188a322f050b7a30, type: 2}
+  - {fileID: 11400000, guid: b6915a32db1f20944bb266b8cfa17bc9, type: 2}
+  - {fileID: 11400000, guid: 87c43348b25d99541a05ec3c31f38465, type: 2}
+  - {fileID: 11400000, guid: 861b912d35dc908469195a79f3029140, type: 2}
+  - {fileID: 11400000, guid: 24a10ebf1b8612543955ef11db03a224, type: 2}
 --- !u!4 &646511837
 Transform:
   m_ObjectHideFlags: 0
@@ -2596,7 +2605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EM: {fileID: 0}
-  inventory: {fileID: 0}
+  selectObject: {fileID: 0}
   crystal: 1000
   gold: 1000
   maxPeople: 10
