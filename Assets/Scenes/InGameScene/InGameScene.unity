@@ -1145,6 +1145,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: unit
       objectReference: {fileID: 0}
+    - target: {fileID: 6071994927374528923, guid: 086916a2f1390b54dad90016c9bb500b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6071994927374528918, guid: 086916a2f1390b54dad90016c9bb500b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2597,6 +2602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EM: {fileID: 0}
   inventory: {fileID: 0}
+  selectObject: {fileID: 0}
   crystal: 1000
   gold: 1000
   maxPeople: 10
@@ -3022,7 +3028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 1, g: 1, b: 1, a: 1}
-  outlineSize: 1
+  outlineSize: 4
 --- !u!1 &1645713260
 GameObject:
   m_ObjectHideFlags: 0

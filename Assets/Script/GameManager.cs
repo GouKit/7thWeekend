@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
     public EventManager EM;
     public Inventory inventory;
 
-    public int crystal=1000;
+    public GameObject selectObject;
+
+    public int crystal=300;
     public int gold=1000;
     public int maxPeople=10;
 

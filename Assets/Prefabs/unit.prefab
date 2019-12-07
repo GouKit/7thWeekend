@@ -19,8 +19,8 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
 --- !u!4 &6071994927374528918
 Transform:
   m_ObjectHideFlags: 0
@@ -96,12 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266b8189df308044285c412eb749914b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  player: {fileID: 0}
 --- !u!95 &6071994927374528916
 Animator:
   serializedVersion: 3
