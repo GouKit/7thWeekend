@@ -1318,7 +1318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d434dc7e4c6e4f04d82602a64a5ba99c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxNum: 0
+  maxNum: 10
   curNum: 0
   soldier: {fileID: 7375228554117047895, guid: 14844d2d04370444fa39763bf2990f81, type: 3}
   type:
@@ -2592,6 +2592,7 @@ MonoBehaviour:
   - {fileID: 5889337970783976725, guid: c3d890d55d3c4e94cab556fa93c3538a, type: 3}
   questList: {fileID: 1873300962}
   quest: {fileID: 1783239658582267266, guid: bf794924a2e38a54ca65de52918be090, type: 3}
+  curQuest: 0
 --- !u!114 &1407960009
 MonoBehaviour:
   m_ObjectHideFlags: 0
