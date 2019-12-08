@@ -22,7 +22,7 @@ public class MonsterInstance : MonoBehaviour
 
     public void AddPlayer()
     {
-        if (GameManager.instance.selectObject != null && players.Count < 4)
+        if (GameManager.instance. selectObject != null && players.Count < 4)
         {
             players.Add(GameManager.instance.selectObject);
             GameManager.instance.selectObject.SetActive(false);
