@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PopupOnOff : MonoBehaviour
+public class PopupOnOff : SingletonBehaviour<PopupOnOff>
 {
     public GameObject quest;
 

@@ -8,17 +8,11 @@ public class SoldierFactory : MonoBehaviour
     public int curNum;
     public GameObject soldier;
     public Player[] type;
+
     // Start is called before the first frame update
     private void Start()
     {
-
         StartCoroutine(MakeSoldier());
-        
-    }
-
-    private void Update()
-    {
-        
     }
 
     IEnumerator MakeSoldier()

@@ -14,6 +14,10 @@ public class Monster : ScriptableObject
     public string Name => name;
 
     [SerializeField]
+    private int hp; //몬스터 체력
+    public int Hp => hp;
+
+    [SerializeField]
     private int power; //몬스터 전투력
     public int Power => power;
 

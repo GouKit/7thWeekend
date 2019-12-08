@@ -5,28 +5,24 @@ using UnityEngine;
 
 public class DragnDrop : MonoBehaviour
 {
-    public List<Transform> slot = new List<Transform>();
-
     private Vector3 propose;//기존위치
 
-    List<Vector2> llist = new List<Vector2>();
-
-    public GameObject player;
-    // Start is called before the first frame update
     void Start()
     {
         gameObject.GetComponent<SpriteOutline>().enabled = false;
     }
 
-private void OnMouseDown()
+    private void OnMouseDown()
     {
         propose = transform.position;
         gameObject.GetComponent<SpriteOutline>().enabled = true;
+        GameManager.instance.selectObject = gameObject;
     }
 
     private void OnMouseUp()
     {
         gameObject.GetComponent<SpriteOutline>().enabled = false;
+        GameManager.instance.selectObject = null;
     }
 
     private void OnMouseDrag()
@@ -34,12 +30,6 @@ private void OnMouseDown()
         Vector3 point = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         point.z = gameObject.transform.position.z;
         gameObject.transform.position = point;
-    }
-
-    public void mando()
-    {
-        Debug.Log("asdf");
-        gameObject.SetActive(false);
     }
 
 }
