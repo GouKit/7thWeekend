@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: ThiefClass1
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 3244267137043283461, guid: 57442f66b006b494a8a3a49f596cae7d, type: 3}
   type: 3
   name: 
   rank: "\uB3D9"
@@ -24,3 +24,4 @@ MonoBehaviour:
   employ: 10
   rewardDown: 5
   deadPenalty: 5
+  nowExp: 0

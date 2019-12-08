@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance = null;
     public EventManager EM;
     public GameObject selectObject;
+    public List<GameObject> MonsterList = new List<GameObject>();
 
     public int crystal = 300;
     public int gold = 1000;

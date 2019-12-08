@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db797df1aef56c3458ed2b007dacf242, type: 3}
   m_Name: Ork
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 55aa0ad717ecfb94487496c0a13a08fd, type: 3}
   name: "\uC624\uD06C"
   hp: 100
   power: 25
   exp: 25
   gold: 10
   possibility: 35
-  time: 600
+  time: 10
   exitTime: 0

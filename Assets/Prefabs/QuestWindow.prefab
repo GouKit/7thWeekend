@@ -531,7 +531,6 @@ MonoBehaviour:
   - {fileID: 1783239656576846046}
   - {fileID: 1783239658478900936}
   - {fileID: 1783239658419356254}
-  - {fileID: 8871969865699197866}
   players: []
   deadPlayers: []
   allPower: 0

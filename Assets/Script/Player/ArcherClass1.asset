@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: ArcherClass1
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: -4776574909256564735, guid: 58598ac3eacb8174788a43b6c313d059, type: 3}
   type: 2
   name: 
   rank: "\uB3D9"
@@ -24,3 +24,4 @@ MonoBehaviour:
   employ: 10
   rewardDown: 5
   deadPenalty: 5
+  nowExp: 0

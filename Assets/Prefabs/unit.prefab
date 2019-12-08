@@ -96,12 +96,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266b8189df308044285c412eb749914b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slot:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  player: {fileID: 0}
 --- !u!95 &6071994927374528916
 Animator:
   serializedVersion: 3
@@ -135,8 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6071994927374528916}
   speed: 1
-  autoPilotLeftPivot: {x: -5, y: -5}
-  autoPilotRightPivot: {x: 5, y: 2}
+  autoPilotLeftPivot: {x: -7.5, y: -4.5}
+  autoPilotRightPivot: {x: 2, y: -2}
   moveTest: {x: 0, y: 0}
   fastAnimator:
   - {fileID: 9100000, guid: 66008b8fb454f5a4d9ad23dc49a45c8b, type: 2}

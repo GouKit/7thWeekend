@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    public List<GameObject> MonsterList = new List<GameObject>();
     public Transform questList;
     public GameObject quest;
     public int curQuest = 0;
@@ -33,6 +32,5 @@ public class EventManager : MonoBehaviour
             currentTime = 0;
         }
     }
-
 
 }
