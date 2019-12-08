@@ -1144,6 +1144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: unit
       objectReference: {fileID: 0}
+    - target: {fileID: 6071994927374528923, guid: 086916a2f1390b54dad90016c9bb500b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6071994927374528918, guid: 086916a2f1390b54dad90016c9bb500b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1319,17 +1324,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxNum: 0
   curNum: 0
-  soldier: {fileID: 7375228554117047895, guid: 14844d2d04370444fa39763bf2990f81, type: 3}
-  type:
-  - {fileID: 11400000, guid: d1c171e308f9f28478427e2c26c9ed44, type: 2}
-  - {fileID: 11400000, guid: fabd6ff3a11f9d24bbeb84a5246e00fe, type: 2}
-  - {fileID: 11400000, guid: 9d659a2d6508eca43b9768df49052041, type: 2}
-  - {fileID: 11400000, guid: 701afd798927df940b6f0e0047c039ed, type: 2}
-  - {fileID: 11400000, guid: e424e337901404b4188a322f050b7a30, type: 2}
-  - {fileID: 11400000, guid: b6915a32db1f20944bb266b8cfa17bc9, type: 2}
-  - {fileID: 11400000, guid: 87c43348b25d99541a05ec3c31f38465, type: 2}
-  - {fileID: 11400000, guid: 861b912d35dc908469195a79f3029140, type: 2}
-  - {fileID: 11400000, guid: 24a10ebf1b8612543955ef11db03a224, type: 2}
+  soldier: {fileID: 0}
+  type: []
 --- !u!4 &646511837
 Transform:
   m_ObjectHideFlags: 0
@@ -2590,6 +2586,7 @@ MonoBehaviour:
   - {fileID: 5889337970783976725, guid: c3d890d55d3c4e94cab556fa93c3538a, type: 3}
   questList: {fileID: 1873300962}
   quest: {fileID: 1783239658582267266, guid: bf794924a2e38a54ca65de52918be090, type: 3}
+  curQuest: 0
 --- !u!114 &1407960009
 MonoBehaviour:
   m_ObjectHideFlags: 0

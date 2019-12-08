@@ -1,23 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonsterInstance : MonoBehaviour
 {
     public EventPopup popup;
     public LosePopup lose;
     public WinPopup win;
+    public GameObject startBtn;
+    public Text text;
     private MonsterBase monster;
+    public List<Image> slot = new List<Image>();
     public List<GameObject> players = new List<GameObject>();
     public List<GameObject> deadPlayers = new List<GameObject>();
     public int allPower;
     public bool SpendMoney = false;
     private float time = 0;
+    bool isStart = false;
 
     void Start()
     {
         Instantiate(popup).SetEvent(monster, x => PopupOnOff.instance.QuestPopup());
         monster = GameManager.instance.EM.MonsterList.GetRandomElement().GetComponent<MonsterBase>();
+        slot[4].sprite = monster.monster.Image;
     }
 
     public void AddPlayer()
@@ -25,7 +31,10 @@ public class MonsterInstance : MonoBehaviour
         if (GameManager.instance.selectObject != null && players.Count < 4)
         {
             players.Add(GameManager.instance.selectObject);
+            PlayerBase pb = GameManager.instance.selectObject.GetComponent<PlayerBase>();
+            slot[players.Count-1].sprite = pb.player.image;
             GameManager.instance.selectObject.SetActive(false);
+            startBtn.SetActive(true);
         }
     }
 
@@ -37,16 +46,19 @@ public class MonsterInstance : MonoBehaviour
             PlayerBase pb = players[i].GetComponent<PlayerBase>();
             allPower += pb.power;
         }
+        isStart = true;
     }
 
     void Update()
     {
-        time += Time.deltaTime;
-        if(monster.Time < time || SpendMoney)
+        if(isStart)
         {
-            //SpendMoney = false;
-            //time = 0;
-            Result();
+            time += Time.deltaTime;
+            text.text = time + " / " + monster.Time;
+            if(monster.Time < time || SpendMoney)
+            {
+                Result();
+            }
         }
     }
 
