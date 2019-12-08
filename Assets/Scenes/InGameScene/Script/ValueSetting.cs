@@ -14,6 +14,6 @@ public class ValueSetting : MonoBehaviour
     {
         Gold.text = "" + GameManager.instance.gold;
         Crystal.text = "" + GameManager.instance.crystal;
-        Population.text = GameManager.instance.maxPeople+"/"+ GameManager.instance.maxPeople;
+        Population.text = SoldierMgr.instance.Soldier.Count+"/"+ GameManager.instance.maxPeople;
     }
 }
