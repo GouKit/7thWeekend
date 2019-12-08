@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db797df1aef56c3458ed2b007dacf242, type: 3}
   m_Name: EvilOne
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: d49ae8f790f25f2428e0319252bf3241, type: 3}
+  image: {fileID: 21300000, guid: aba5155f225eb394cb9eaead856fee6f, type: 3}
   name: "\uB9C8\uC655"
   hp: 100
   power: 50
   exp: 90
   gold: 500
   possibility: 25
-  time: 10800
+  time: 10
   exitTime: 0

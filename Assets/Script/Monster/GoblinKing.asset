@@ -19,5 +19,5 @@ MonoBehaviour:
   exp: 30
   gold: 10
   possibility: 30
-  time: 600
+  time: 10
   exitTime: 0

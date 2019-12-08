@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: WarriorClass3
   m_EditorClassIdentifier: 
-  image: {fileID: -2589803226945397928, guid: 03356d493728a3a4cb825ff40777a9f4, type: 3}
+  image: {fileID: 4848054499641458636, guid: 6caaa729f18173547904d27de449131b, type: 3}
   type: 0
   animator: {fileID: 22100000, guid: f94d4b32b75d2ef4d95436cd9bc4cc98, type: 2}
   name: 

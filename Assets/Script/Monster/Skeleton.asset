@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db797df1aef56c3458ed2b007dacf242, type: 3}
   m_Name: Skeleton
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 34af130cbfb57d948930b80f393162c5, type: 3}
+  image: {fileID: 21300000, guid: 1c10d24d87dbf1544b55941bbfbe9113, type: 3}
   name: "\uC2A4\uCF08\uB808\uD1A4"
   hp: 100
   power: 20
   exp: 20
   gold: 10
   possibility: 40
-  time: 600
+  time: 10
   exitTime: 0

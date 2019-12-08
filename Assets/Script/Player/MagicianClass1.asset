@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: MagicianClass1
   m_EditorClassIdentifier: 
-  image: {fileID: 2647774702688199305, guid: 8ca9adf1cb02a194f9e4ea60ea380626, type: 3}
+  image: {fileID: -6438765330233453240, guid: 8ca9adf1cb02a194f9e4ea60ea380626, type: 3}
   type: 1
   animator: {fileID: 9100000, guid: 66008b8fb454f5a4d9ad23dc49a45c8b, type: 2}
   name: 

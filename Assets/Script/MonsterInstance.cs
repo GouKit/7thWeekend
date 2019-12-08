@@ -21,20 +21,20 @@ public class MonsterInstance : MonoBehaviour
 
     void Start()
     {
+        monster = GameManager.instance.MonsterList.GetRandomElement().GetComponent<MonsterBase>();
         Instantiate(popup).SetEvent(monster, x => PopupOnOff.instance.QuestPopup());
-        monster = GameManager.instance.EM.MonsterList.GetRandomElement().GetComponent<MonsterBase>();
-        slot[4].sprite = monster.monster.Image;
     }
 
     public void AddPlayer()
     {
-        if (GameManager.instance. selectObject != null && players.Count < 4)
+        if (GameManager.instance.selectObject != null && players.Count < 4)
         {
             players.Add(GameManager.instance.selectObject);
             PlayerBase pb = GameManager.instance.selectObject.GetComponent<PlayerBase>();
             slot[players.Count-1].sprite = pb.player.image;
             GameManager.instance.selectObject.SetActive(false);
             startBtn.SetActive(true);
+            GameManager.instance.selectObject = null;
         }
     }
 
@@ -54,8 +54,8 @@ public class MonsterInstance : MonoBehaviour
         if(isStart)
         {
             time += Time.deltaTime;
-            text.text = time + " / " + monster.Time;
-            if(monster.Time < time || SpendMoney)
+            text.text = time + " / " + monster.monster.Time;
+            if(monster.monster.Time < time || SpendMoney)
             {
                 Result();
             }
@@ -103,7 +103,7 @@ public class MonsterInstance : MonoBehaviour
         }
 
         //공략 가능성 * (100+파티 전투력- 몬스터 전투력)
-        int possible = monster.Possibility * (100 + allPower - monster.power);
+        int possible = monster.monster.Possibility * (100 + allPower - monster.power);
         if(Random.Range(0,100) > possible)
         {
             //현재 체력 = 현제체력 + 현재체력 * 0.5 * (몬스터전투력 - 유저 전투력) / 100
@@ -117,11 +117,11 @@ public class MonsterInstance : MonoBehaviour
         {
             //성공(무기획득 확률)
             Instantiate(win).SetRebornAction(Die, PlayerSafty);
-            GameManager.instance.gold += monster.Gold;
+            GameManager.instance.gold += monster.monster.Gold;
             for(int i = 0; i < players.Count; i++)
             {
                 PlayerBase pb = players[i].GetComponent<PlayerBase>();
-                pb.nowExp += monster.Exp;
+                pb.nowExp += monster.monster.Exp;
                 if (pb.nowExp >= pb.needExp)
                     pb.LevelUp();
             }

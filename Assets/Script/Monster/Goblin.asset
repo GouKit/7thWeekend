@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db797df1aef56c3458ed2b007dacf242, type: 3}
   m_Name: Goblin
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 55aa0ad717ecfb94487496c0a13a08fd, type: 3}
+  image: {fileID: 21300000, guid: 6fcb6c27f61cf3048ae068279fc0a18a, type: 3}
   name: "\uACE0\uBE14\uB9B0"
   hp: 100
   power: 15
   exp: 10
   gold: 10
   possibility: 45
-  time: 600
+  time: 10
   exitTime: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: PriestClass2
   m_EditorClassIdentifier: 
-  image: {fileID: -3391523117115930564, guid: 03e2840d32c295e4288505b7a3d035d5, type: 3}
+  image: {fileID: 2985254314238502028, guid: 5fce4baa99d84184c92e4546b414ee65, type: 3}
   type: 4
   animator: {fileID: 22100000, guid: aea605bf17d947540ade50de52337a18, type: 2}
   name: 

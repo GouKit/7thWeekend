@@ -12,16 +12,6 @@ public class MonsterBase : MonoBehaviour
     [HideInInspector]
     public int hp; //몬스터 체력
 
-    public int Exp => monster.Exp;
-
-    public int Gold => monster.Gold;
-
-    public int Possibility => monster.Possibility;
-
-    public float Time => monster.Time;
-
-    public float ExitTIme => monster.ExitTIme;
-
     private void Start()
     {
         hp = monster.Hp;

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db797df1aef56c3458ed2b007dacf242, type: 3}
   m_Name: Golem
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 92890fb8a11bf9e4894561aadf05963c, type: 3}
+  image: {fileID: 21300000, guid: 7325a1b1bc482a94a97a839f70ab363e, type: 3}
   name: "\uACE8\uB818"
   hp: 100
   power: 45
   exp: 75
   gold: 50
   possibility: 30
-  time: 1800
+  time: 10
   exitTime: 0

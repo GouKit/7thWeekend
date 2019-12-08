@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/InGameScene/InGameScene.unity
     guid: bfae0a3fb72f13949997522bb34a3947
   - enabled: 1
-    path: Assets/Scenes/Giljun/Scenes/EmploymentSystem.unity
+    path: Assets/Scenes/Employment/Scenes/EmploymentSystem.unity
     guid: ec66e0158639ad34db8c441a7581767f
   m_configObjects: {}
