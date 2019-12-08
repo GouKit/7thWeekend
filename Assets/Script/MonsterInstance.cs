@@ -28,7 +28,7 @@ public class MonsterInstance : MonoBehaviour
 
     public void AddPlayer()
     {
-        if (GameManager.instance.selectObject != null && players.Count < 4)
+        if (GameManager.instance. selectObject != null && players.Count < 4)
         {
             players.Add(GameManager.instance.selectObject);
             PlayerBase pb = GameManager.instance.selectObject.GetComponent<PlayerBase>();

@@ -8,13 +8,13 @@ public class GameManager : MonoBehaviour
     public EventManager EM;
     public GameObject selectObject;
 
-    public int crystal=300;
-    public int gold=1000;
-    public int maxPeople=10;
+    public int crystal = 300;
+    public int gold = 1000;
+    public int maxPeople = 10;
 
     void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
