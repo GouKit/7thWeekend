@@ -42,6 +42,8 @@ public class PlayerBase : MonoBehaviour
         rewardDown = player.rewardDown;
         deadPenalty = player.deadPenalty;
         nowExp = player.nowExp;
+
+
     }
 
     void Upgrade(int level)

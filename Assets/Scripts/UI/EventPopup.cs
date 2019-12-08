@@ -9,12 +9,14 @@ public class EventPopup : MonoBehaviour
 	public Image image;
 	private MonsterBase monsterBase;
 	private Action<MonsterBase> action;
+    public List<Monster> monsters;
 
 	public void SetEvent(MonsterBase monsterBase, Action<MonsterBase> action = null)
 	{
 		this.monsterBase = monsterBase;
-		image.sprite = monsterBase.monster.Image;
-		this.action = action;
+        // image.sprite = monsterBase.monster.Image;
+        image.sprite = monsters.GetRandomElement().Image;
+        this.action = action;
 	}
 
 	public void _Go()

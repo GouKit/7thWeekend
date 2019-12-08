@@ -19,6 +19,7 @@ public class Player : ScriptableObject
 {
     public Sprite image; //병사 이미지
     public PlayerType.Player_Type type; //병사의 클래스
+    public RuntimeAnimatorController animator;
     public new string name; //병사 이름 
     public string rank; //병사 등급
     public int hp; //병사 체력

@@ -32,7 +32,6 @@ public class UnitMoveAI : MonoBehaviour
 	private void Awake()
 	{
 		animator.runtimeAnimatorController = fastAnimator.GetRandomElement();
-		AutoPilot = true;
 		StartCoroutine(AutoPilotCor());
 	}
 
@@ -50,6 +49,19 @@ public class UnitMoveAI : MonoBehaviour
 			}
 		}
 	}
+
+    public void MoveTo(float x, float y)
+    {
+        MoveTo(new Vector2(x, y));
+    }
+
+    public Player player;
+    public void SetUnit(Player player)
+    {
+        this.player = player;
+        animator.runtimeAnimatorController = player.animator;
+        MoveTo(5, -4);
+    }
 
 	private void Update()
 	{

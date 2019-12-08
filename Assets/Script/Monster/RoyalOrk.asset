@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db797df1aef56c3458ed2b007dacf242, type: 3}
   m_Name: RoyalOrk
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: aba5155f225eb394cb9eaead856fee6f, type: 3}
   name: "\uB85C\uC584\uC624\uD06C"
   hp: 100
   power: 35

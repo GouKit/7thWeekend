@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: ArcherClass2
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: -7561659355071109298, guid: 16746b3a458418442976e0bedeb11ce2, type: 3}
   type: 2
+  animator: {fileID: 22100000, guid: 95e2468ad7f26df41987876624298cbd, type: 2}
   name: 
   rank: "\uC740"
   hp: 60
@@ -24,3 +25,4 @@ MonoBehaviour:
   employ: 25
   rewardDown: 7
   deadPenalty: 15
+  nowExp: 0

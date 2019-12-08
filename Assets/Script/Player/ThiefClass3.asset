@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: ThiefClass3
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 3244267137043283461, guid: 57442f66b006b494a8a3a49f596cae7d, type: 3}
   type: 3
+  animator: {fileID: 22100000, guid: af750feb0abe6d8448c06c6b41a55419, type: 2}
   name: 
   rank: "\uAE08"
   hp: 70
@@ -24,3 +25,4 @@ MonoBehaviour:
   employ: 100
   rewardDown: 10
   deadPenalty: 25
+  nowExp: 0

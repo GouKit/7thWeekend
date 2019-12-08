@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 0}
   type: 3
+  animator: {fileID: 22100000, guid: af750feb0abe6d8448c06c6b41a55419, type: 2}
   name: 
   rank: "\uB3D9"
   hp: 50
@@ -24,3 +25,4 @@ MonoBehaviour:
   employ: 10
   rewardDown: 5
   deadPenalty: 5
+  nowExp: 0

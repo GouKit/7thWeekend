@@ -215,6 +215,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1600460709620300131}
+  monsters:
+  - {fileID: 11400000, guid: 085420de456055444bf4a2563fb5c083, type: 2}
+  - {fileID: 11400000, guid: 4a64d6221e60cfc418ad8f3296f2eef0, type: 2}
+  - {fileID: 11400000, guid: de4b8be19336556458ccd8d789895e0a, type: 2}
+  - {fileID: 11400000, guid: 8bad268871126c240be40b3d8c24592d, type: 2}
+  - {fileID: 11400000, guid: 0fe22abad787bf8408794c77cf3a69d7, type: 2}
+  - {fileID: 11400000, guid: e835e672e4a6dc6499c3fcdecf8cd196, type: 2}
+  - {fileID: 11400000, guid: 39115d42057c299429eaab29fbeb7073, type: 2}
+  - {fileID: 11400000, guid: 59dfcf0fd7f785c45ad79b212c290a67, type: 2}
+  - {fileID: 11400000, guid: ae8df1eef17e8f549916d315a1a1fea7, type: 2}
+  - {fileID: 11400000, guid: 28876c11d34c75c4abe28591123f50d6, type: 2}
 --- !u!1 &2101300349086039107
 GameObject:
   m_ObjectHideFlags: 0

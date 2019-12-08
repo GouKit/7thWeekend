@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59855f7e095331748b50c4af961742c8, type: 3}
   m_Name: WarriorClass1
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
+  image: {fileID: 547713696027888389, guid: 805328f8fbd51dd43a31eb540421a3b0, type: 3}
   type: 0
+  animator: {fileID: 22100000, guid: d1e802a396228fc4eb77c6241a94eac1, type: 2}
   name: 
   rank: "\uB3D9"
   hp: 100
@@ -24,3 +25,4 @@ MonoBehaviour:
   employ: 10
   rewardDown: 5
   deadPenalty: 5
+  nowExp: 0
